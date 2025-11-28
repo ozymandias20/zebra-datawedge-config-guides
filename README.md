@@ -14,7 +14,8 @@ El primer paso es acceder a la aplicación DataWedge y seleccionar el perfil a c
 > **Nota:**
 > * Asegúrate de que el perfil seleccionado esté **Enabled** (Habilitado).
 > * El perfil `DWDemo` se utiliza para programas de demostración, y debe marcarse como habilitado cuando se realizan pruebas.
-
+>   
+![Pantalla de perfiles de DataWedge mostrando Profile0 y DWDemo](images/1.jpg)
 ---
 
 ## 2. Configuración de la Sección Barcode Input
@@ -23,7 +24,10 @@ Dentro del perfil, configura la sección "Barcode Input" para habilitar el escá
 
 * Asegúrate de que la opción **`Enabled`** esté marcada.
 * Asegúrate de que la opción **`Hardware Trigger`** esté marcada.
-
+  
+> ![Configuración de perfil mostrando Enabled y Hardware Trigger](images/2.jpg)
+> ![Configuración de perfil, segunda parte](images/3.jpg)
+> 
 > **Importante:**
 > * Todas las configuraciones deben aplicarse tanto a la sección **Barcode Input** como a la sección **Pulse Section**.
 > * Si la Pulse Section no está configurada, podría haber errores al leer la tecla Enter a través de los botones de pulso.
@@ -38,6 +42,10 @@ Para habilitar la conversión de UPC-A a EAN13, se debe configurar el decodifica
 2.  Pulsa en **`Decoders`**.
 3.  Localiza y **habilita** el decodificador **`UPCA`** marcando la casilla correspondiente.
 4.  Para transmitir UPC-A como EAN13, es necesario configurar esta opción dentro de los parámetros del decodificador UPC-A (usualmente en `UPC/EAN params`).
+   
+![Pantalla de Configuración del Escáner](images/4.jpg)
+![Lista de decodificadores mostrando UPC-A](images/5.jpg)
+![Pantalla de UPC/EAN params](images/6.jpg)
 
 ### Parámetros Opcionales de UPC-A (Decoder Params)
 
@@ -45,7 +53,8 @@ Para habilitar la conversión de UPC-A a EAN13, se debe configurar el decodifica
 * **Dígito de Chequeo (Report Check Digit):** Para incluir el dígito de chequeo, localiza la opción **`Report Check Digit`** dentro de `Decoder Params` y asegúrate de que esté habilitada.
 
 ---
-
+![Parámetros de UPC-A](images/7.jpg)
+![Opciones de Preamble](images/8.jpg)
 ## 4. Configuración de la Salida de Teclado (Keystroke Output)
 
 Esta configuración define cómo se transmite el dato escaneado a la aplicación de destino.
@@ -66,6 +75,9 @@ Bajo la sección "Keystroke Output" (o sus equivalentes en español):
 > **Nota:** Para el desarrollo de aplicaciones Flutter, es crucial asegurar que el evento se transmita como carácter y que se añada la tecla Enter.
 
 ---
+> ![Opciones de evento de teclado](images/9.jpg)
+> ![Formato de datos básico](images/10.jpg)
+> ![Pantalla de perfil mostrando opciones de teclado DataWedge](images/11.jpg)
 
 ## 5. Prueba de Conversión
 
@@ -76,4 +88,5 @@ Una vez completada la configuración, el dispositivo debe convertir el código U
 | **7** 25272 73070 **6** | **0**725272730706 |
 
 ---
+> ![Barcode Conversion](images/barcode.jpg)
 
