@@ -55,6 +55,7 @@ Para habilitar la conversión de UPC-A a EAN13, se debe configurar el decodifica
 ---
 ![Parámetros de UPC-A](images/7.jpg)
 ![Opciones de Preamble](images/8.jpg)
+
 ## 4. Configuración de la Salida de Teclado (Keystroke Output)
 
 Esta configuración define cómo se transmite el dato escaneado a la aplicación de destino.
